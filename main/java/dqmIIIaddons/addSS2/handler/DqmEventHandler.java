@@ -7,7 +7,9 @@ import net.minecraft.item.ItemStack;
 import shift.sextiarysector.api.SextiarySectorAPI;
 import shift.sextiarysector.api.event.PlayerEatenEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQIngots;
+import dqmIII.api.Items.DQMiscs;
+import dqmIII.api.Items.DQSeeds;
 import dqmIII.api.event.DqmBedEvent;
 import dqmIII.api.event.DqmLvUpEvent;
 
@@ -22,177 +24,177 @@ public class DqmEventHandler {
 		EntityPlayer player = (EntityPlayer) event.entity;
 
 		//薬草
-		if (food.getItem() == DQM.seeds.itemYakusou) {
+		if (food.getItem() == DQSeeds.itemYakusou) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.5f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemYakusou2) {
+		if (food.getItem() == DQSeeds.itemYakusou2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.6f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 40, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemYakusou3) {
+		if (food.getItem() == DQSeeds.itemYakusou3) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 2, 0.5f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 40, 3);
 		}
 
 		//毒消し薬
-		if (food.getItem() == DQM.seeds.itemDokukesisou) {
+		if (food.getItem() == DQSeeds.itemDokukesisou) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.4f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 20, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemDokukesisou2) {
+		if (food.getItem() == DQSeeds.itemDokukesisou2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.4f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 20, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemDokukesisou3) {
+		if (food.getItem() == DQSeeds.itemDokukesisou3) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.4f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 2);
 		}
 
 		//力の種
-		if (food.getItem() == DQM.seeds.itemTikaranotane) {
+		if (food.getItem() == DQSeeds.itemTikaranotane) {
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 8);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 50, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemTikaranotane2) {
+		if (food.getItem() == DQSeeds.itemTikaranotane2) {
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 12);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 50, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemTikaranotane3) {
+		if (food.getItem() == DQSeeds.itemTikaranotane3) {
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 16);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 60, 4);
 		}
 
 		//守りの種
-		if (food.getItem() == DQM.seeds.itemMamorinotane) {
+		if (food.getItem() == DQSeeds.itemMamorinotane) {
 
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.2f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemMamorinotane2) {
+		if (food.getItem() == DQSeeds.itemMamorinotane2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.3f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemMamorinotane3) {
+		if (food.getItem() == DQSeeds.itemMamorinotane3) {
 
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.4f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 40, 2);
 		}
 
 		//素早さの種
-		if (food.getItem() == DQM.seeds.itemSubayasanotane) {
+		if (food.getItem() == DQSeeds.itemSubayasanotane) {
 
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 8);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 20, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemSubayasanotane2) {
+		if (food.getItem() == DQSeeds.itemSubayasanotane2) {
 
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 12);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 20, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemSubayasanotane3) {
+		if (food.getItem() == DQSeeds.itemSubayasanotane3) {
 
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 16);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 3);
 		}
 
 		//癒しの実
-		if (food.getItem() == DQM.seeds.itemIyasinomi) {
+		if (food.getItem() == DQSeeds.itemIyasinomi) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 4, 0.6f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemIyasinomi2) {
+		if (food.getItem() == DQSeeds.itemIyasinomi2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 6, 0.7f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemIyasinomi3) {
+		if (food.getItem() == DQSeeds.itemIyasinomi3) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 8, 0.8f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 3);
 		}
 
 		//炎の実
-		if (food.getItem() == DQM.seeds.itemHonoonomi) {
+		if (food.getItem() == DQSeeds.itemHonoonomi) {
 
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 16.0f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 20, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemHonoonomi2) {
+		if (food.getItem() == DQSeeds.itemHonoonomi2) {
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 20.0f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 30, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemHonoonomi3) {
+		if (food.getItem() == DQSeeds.itemHonoonomi3) {
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 24.0f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 40, 2);
 		}
 
 		//魔法の実
-		if (food.getItem() == DQM.seeds.itemMahounomiI) {
+		if (food.getItem() == DQSeeds.itemMahounomiI) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 2, 0.4f);
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 8);
 		}
 
-		if (food.getItem() == DQM.seeds.itemMahounomiI2) {
+		if (food.getItem() == DQSeeds.itemMahounomiI2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 2, 0.4f);
 			//SextiarySectorAPI.playerManager.addStaminaStats(player, 1, 2);
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 12);
 		}
 
-		if (food.getItem() == DQM.seeds.itemMahounomiI3) {
+		if (food.getItem() == DQSeeds.itemMahounomiI3) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 3, 0.5f);
 			//SextiarySectorAPI.playerManager.addStaminaStats(player, 2, 2);
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 16);
 		}
 
 		//魔力の実
-		if (food.getItem() == DQM.seeds.itemMaryokunotaneI) {
+		if (food.getItem() == DQSeeds.itemMaryokunotaneI) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 7, 0.7f);
 			//SextiarySectorAPI.playerManager.addStaminaStats(player, 2, 2);
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 12);
 		}
 
-		if (food.getItem() == DQM.seeds.itemMaryokunotaneI2) {
+		if (food.getItem() == DQSeeds.itemMaryokunotaneI2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 7, 0.7f);
 			//SextiarySectorAPI.playerManager.addStaminaStats(player, 2, 2);
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 16);
 		}
 
-		if (food.getItem() == DQM.seeds.itemMaryokunotaneI3) {
+		if (food.getItem() == DQSeeds.itemMaryokunotaneI3) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 7, 0.7f);
 			//SextiarySectorAPI.playerManager.addStaminaStats(player, 2, 2);
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
 		//黄金の実
-		if (food.getItem() == DQM.seeds.itemOugon) {
+		if (food.getItem() == DQSeeds.itemOugon) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 8, 0.4f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 40, 2);
 		}
 
-		if (food.getItem() == DQM.seeds.itemOugon2) {
+		if (food.getItem() == DQSeeds.itemOugon2) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 12, 0.6f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 50, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemOugon3) {
+		if (food.getItem() == DQSeeds.itemOugon3) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 16, 0.6f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 60, 3);
 		}
 
-		if (food.getItem() == DQM.seeds.itemOugon4) {
+		if (food.getItem() == DQSeeds.itemOugon4) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addStaminaStats(player, 70, 4);
 		}
@@ -200,7 +202,7 @@ public class DqmEventHandler {
 
 
 
-		if (food.getItem() == DQM.miscs.itemHebinonukegara) {
+		if (food.getItem() == DQMiscs.itemHebinonukegara) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 16.0f);
 
@@ -208,7 +210,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemHananomitu) {
+		if (food.getItem() == DQMiscs.itemHananomitu) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 4, 0.4f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -216,7 +218,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemHonehone) {
+		if (food.getItem() == DQMiscs.itemHonehone) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 12.0f);
 
@@ -224,7 +226,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemMadarakumonoito) {
+		if (food.getItem() == DQMiscs.itemMadarakumonoito) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 4, 0.3f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -232,7 +234,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemMidorinokoke) {
+		if (food.getItem() == DQMiscs.itemMidorinokoke) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 2, 0.4f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -240,7 +242,7 @@ public class DqmEventHandler {
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 4);
 		}
 
-		if (food.getItem() == DQM.miscs.itemNebanebazeri) {
+		if (food.getItem() == DQMiscs.itemNebanebazeri) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 6, 0.5f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -248,7 +250,7 @@ public class DqmEventHandler {
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 4);
 		}
 
-		if (food.getItem() == DQM.miscs.itemNekozuna) {
+		if (food.getItem() == DQMiscs.itemNekozuna) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 12.0f);
 
@@ -256,7 +258,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemSuraimuzeri) {
+		if (food.getItem() == DQMiscs.itemSuraimuzeri) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 5, 0.5f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -264,7 +266,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemTyounohane) {
+		if (food.getItem() == DQMiscs.itemTyounohane) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 16.0f);
 
@@ -272,7 +274,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemKazekirinohane) {
+		if (food.getItem() == DQMiscs.itemKazekirinohane) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 1, 0.5f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -280,7 +282,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemKyodaihigetokage) {
+		if (food.getItem() == DQMiscs.itemKyodaihigetokage) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 6, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 24.0f);
 
@@ -288,7 +290,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemTogetogenokiba) {
+		if (food.getItem() == DQMiscs.itemTogetogenokiba) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 24.0f);
 
@@ -296,7 +298,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemUruwasikinoko) {
+		if (food.getItem() == DQMiscs.itemUruwasikinoko) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 8, 0.6f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -304,7 +306,7 @@ public class DqmEventHandler {
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 8);
 		}
 
-		if (food.getItem() == DQM.miscs.itemYogoretahoutai) {
+		if (food.getItem() == DQMiscs.itemYogoretahoutai) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 16.0f);
 
@@ -312,7 +314,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemAyasiikobin) {
+		if (food.getItem() == DQMiscs.itemAyasiikobin) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, rand.nextInt(10) + 4, 0.6f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -320,7 +322,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemMaryokunotuti) {
+		if (food.getItem() == DQMiscs.itemMaryokunotuti) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 24.0f);
 
@@ -328,7 +330,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemSeijanohai) {
+		if (food.getItem() == DQMiscs.itemSeijanohai) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 24.0f);
 
@@ -336,7 +338,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemAmatuyunoito) {
+		if (food.getItem() == DQMiscs.itemAmatuyunoito) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 12, 0.6f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -344,7 +346,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemTensinosoma) {
+		if (food.getItem() == DQMiscs.itemTensinosoma) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 10, 0.5f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -352,7 +354,7 @@ public class DqmEventHandler {
 			//SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 20);
 		}
 
-		if (food.getItem() == DQM.miscs.itemRyuunohizake) {
+		if (food.getItem() == DQMiscs.itemRyuunohizake) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.7f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -363,7 +365,7 @@ public class DqmEventHandler {
 
 
 
-		if (food.getItem() == DQM.miscs.itemKenjanoseisui) {
+		if (food.getItem() == DQMiscs.itemKenjanoseisui) {
 			SextiarySectorAPI.playerManager.addMoistureStats(player, 8, 0.6f);
 			//SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 18.0f);
 
@@ -371,7 +373,7 @@ public class DqmEventHandler {
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 8);
 		}
 
-		if (food.getItem() == DQM.ingots.itemHosinokakera) {
+		if (food.getItem() == DQIngots.itemHosinokakera) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 4, 0.6f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 8.0f);
 
@@ -379,7 +381,7 @@ public class DqmEventHandler {
 			SextiarySectorAPI.playerManager.addStaminaExhaustion(player, 4);
 		}
 
-		if (food.getItem() == DQM.ingots.itemMigakizuna) {
+		if (food.getItem() == DQIngots.itemMigakizuna) {
 			//SextiarySectorAPI.playerManager.addMoistureStats(player, 18, 0.8f);
 			SextiarySectorAPI.playerManager.addMoistureExhaustion(player, 8.0f);
 
